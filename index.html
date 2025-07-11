@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Shirt Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Football Shirt Gallery</h1>
+
+    <label for="filter">Filter by Year:</label>
+    <select id="filter" onchange="filterShirts()">
+        <option value="all">All</option>
+        <option value="1998">1998</option>
+        <option value="2002">2002</option>
+    </select>
+
+    <div class="gallery" id="gallery">
+        <div class="shirt" data-year="1998">
+            <img src="shirts/korea_1998.jpg" alt="South Korea 1998 Shirt">
+            <p>South Korea 1998</p>
+        </div>
+        <div class="shirt" data-year="2002">
+            <img src="shirts/korea_2002.jpg" alt="South Korea 2002 Shirt">
+            <p>South Korea 2002</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

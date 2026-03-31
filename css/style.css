@@ -1,0 +1,51 @@
+:root {
+  --bg: #0f1115;
+  --card: #181c24;
+  --text: #f4f7ff;
+  --muted: #9ba6bf;
+  --accent: #9ad1ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #0c0f14, #131824);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 32px 20px 48px;
+}
+
+h1 {
+  margin: 0 0 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.gallery {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.shirt {
+  background: var(--card);
+  border: 1px solid #2a3242;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 25%);
+}
+
+.shirt img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 10px;
+}
